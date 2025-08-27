@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  /* colors */
+  --color-dark-blue: #21243d;
+  --color-primary: #ff6464;
+  --color-aqua: #edf7fa;
+  --color-secondary: #00a8cc;
+  --color-gray: #8695a4;
+
+  /* fonts */
+  --default-font-family: "Heebo Variables", "Arial", sans-serif;
+}
+
+@layer components {
+  .my-container {
+    @apply w-full max-w-[54.0625rem] mx-auto px-4;
+  }
+}
+
+@layer base {
+  button {
+    cursor: pointer;
+  }
+}
+body {
+  @apply text-base font-normal leading-[1] text-dark-blue;
+}
